@@ -3,7 +3,8 @@
 
 ![screenshot](./images/screenshot.gif)
 
-<br>Algorithm based on classic definition [Paper](https://users.cs.duke.edu/~ola/bubble/bubble.pdf)
+<br>Algorithm based on classic definition<br>
+It can be see on [Paper](https://users.cs.duke.edu/~ola/bubble/bubble.pdf)
 
 ## Content
 
