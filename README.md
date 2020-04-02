@@ -1,7 +1,7 @@
-# Enumerable Methods
-> Project to re-build a few methods of Ruby Language.
+# Bubble Sort Algorithm
+> Project to create Bubble Sort Algorithm using Ruby Language.
 
-![screenshot](./images/screenshot.png)
+![screenshot](./images/screenshot.gif)
 
 <br>Methods based on Enumerable module and Array class.<br>
 As described on documentation here [Enumerable](https://ruby-doc.org/core-2.7.0/Enumerable.html)
@@ -26,23 +26,13 @@ and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
 
 <ul>
   <h3>Features</h3>
-  <p>Re-make these methods and match with documentation expected behavior</p>
-  <li>.each (Only one from Array)</li>
-  <li>.each_with_index</li>
-  <li>.select (Filter like)</li>
-  <li>.all?</li>
-  <li>.any?</li>
-  <li>.none?</li>
-  <li>.count</li>
-  <li>.map</li>
-  <li>.inject (Reduce like)</li>
+  <li>Implement using the classic definition of this algorithm</li>
 </ul>
 
 <ul>
-  <h3>Additional features</h3>
-  <li>Create .multiply_els to test .inject</li>
-  <p>Should multiply all the elements of array together</p>
-  <li>Extends .map to accept procs</li>
+  <h3>Enchant Performance</h3>
+  <li>Make a trigger to stop if array is already sorted.</li>
+  <li>Remove (n-1) iteraction after each lap.</li>
 </ul>
 
 ### Built With
@@ -53,13 +43,13 @@ and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
 
 ## Live Demo
 
-[Run on Repl.it](https://repl.it/@ThiagoMiranda2/enumerables)
+[Run on Repl.it](https://repl.it/@ThiagoMiranda2/bubblesortruby)
 
 ## Quick Start
 
 To get a local copy use:<br>
 ```js
-git clone git@github.com:SevlaMare/enumerables.git
+git clone git@github.com:SevlaMare/bubble_sort_ruby.git
 ```
 
 ### Dependencies
