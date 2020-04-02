@@ -1,5 +1,5 @@
-l1 = [4,3,78,2,0,2]
-l2 = [0,2,2,3,4,78] # sorted
+l1 = [4, 3, 78, 2, 0, 2]
+# l2 = [0,2,2,3,4,78] # sorted
 
 # trigger = true
 # while trigger
@@ -15,13 +15,9 @@ l2 = [0,2,2,3,4,78] # sorted
 # l1 = [2, 0, 2, 3, 4, 78]
 
 i = 0
-while i < l1.length-1
+while i < l1.length - 1
   p l1[i]
-
-  if l1[i] > l1[i+1]
-    l1[i], l1[i+1] = l1[i+1], l1[i]
-  end
-
+  l1[i], l1[i + 1] = l1[i + 1], l1[i] if l1[i] > l1[i + 1]
   i += 1
 end
 
