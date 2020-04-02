@@ -23,13 +23,15 @@ It can be see on [Paper](https://users.cs.duke.edu/~ola/bubble/bubble.pdf)
 
 <ul>
   <h3>Features</h3>
-  <li>Implement using the classic definition of this algorithm</li>
+  <li>Implement using the classic definition of this algorithm.</li>
+  <li>Turn it into a method called bubble_sort.</li>
+  <li>Create bubble_sort_by that accepts a block as criterion.</li>
 </ul>
 
 <ul>
   <h3>Enchant Performance</h3>
-  <li>Make a trigger to stop if array is already sorted.</li>
   <li>Remove (n-1) iteraction after each lap.</li>
+  <li>Make a trigger to stop if array is already sorted.</li>
 </ul>
 
 ### Built With
