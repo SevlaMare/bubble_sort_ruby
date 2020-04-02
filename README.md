@@ -3,11 +3,7 @@
 
 ![screenshot](./images/screenshot.gif)
 
-<br>Methods based on Enumerable module and Array class.<br>
-As described on documentation here [Enumerable](https://ruby-doc.org/core-2.7.0/Enumerable.html)
-and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
-<br>[Inject](https://svn.ruby-lang.org/cgi-bin/viewvc.cgi/trunk/enum.c?view=markup&pathrev=54162)
-
+<br>Algorithm based on classic definition [Paper](https://users.cs.duke.edu/~ola/bubble/bubble.pdf)
 
 ## Content
 
