@@ -20,8 +20,6 @@ def bubble_sort(array)
   array
 end
 
-p bubble_sort([4, 3, 78, 2, 0, 2])
-
 def bubble_sort_by(array)
   trigger = true
   while trigger
@@ -39,7 +37,3 @@ def bubble_sort_by(array)
   end
   array
 end
-
-p bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
-p bubble_sort_by(%w[hi hello hey by]) { |left, right| left.length - right.length }
-p bubble_sort_by(%w[b a aaa aa aaa a aa]) { |left, right| left.length - right.length }
