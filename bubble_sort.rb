@@ -24,35 +24,32 @@ def bubble_sort(array)
 end
 
 # test 1
-p bubble_sort([4, 3, 78, 2, 0, 2])
-
-
+# p bubble_sort([4, 3, 78, 2, 0, 2])
 
 
 def bubble_sort_by(array)
-  for i in array
-    left = array[i]
-    right = array[i + 1]
-    pair = yield(left, right)
 
-    if pair < 0
-      # sorted, left is smaller
-      return -1
-    elsif pair > 0
-      # not sorted, right is smaller
-      return 1
-    elsif pair == 0
-      # nothing to do, they are equals
-      return 0
+  while count < array.length
+    check = yield(array[i], array[i + 1])
+
+    if check > 0
+      p '3-2 = 1 left is greater'
+    elsif check < 0
+      p '1-3= -1 left is smaller, need shift'
+      left, right = right, left
+    else
+      p 'they are equals'
     end
+    count += 1
   end
-
 end
-
-
 
 # test 2
-p bubble_sort_by(["hi","hello","hey"]) do |left, right|
-  left.length - right.length
-end
+# p bubble_sort_by(["hi","hello","hey"]) do |left, right|
+#   left.length - right.length
+# end
 # ["hi", "hey", "hello"]
+
+# test 3
+arr1 = [98, 7, 52, 9, 3, 24, 0, 16]
+p bubble_sort_by(arr1) { |left, right| left.length - right.length }
