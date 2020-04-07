@@ -25,18 +25,13 @@ end
 
 p bubble_sort([4, 3, 78, 2, 0, 2])
 
-
 def bubble_sort_by(array)
   i = 0
-  while i < array.length-1
-    if yield(array[i], array[i-1]) > 0
-      array[i], array[i + 1] = array[i + 1], array[i]
-    end
+  while i < array.length - 1
+    array[i], array[i + 1] = array[i + 1], array[i] if yield(array[i], array[i - 1]).positive?
     i += 1
   end
   p array
 end
 
-
-bubble_sort_by(["hi","hello","hey"]) { |left, right| left.length - right.length }
-# ["hi", "hey", "hello"]
+bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
