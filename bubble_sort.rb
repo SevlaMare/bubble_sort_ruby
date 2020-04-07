@@ -1,3 +1,6 @@
+# rubocop:disable Style/Next
+# dissable Next, since my soluction is trigger to next using while true
+
 def bubble_sort(array)
   trigger = true
   while trigger
@@ -13,6 +16,7 @@ def bubble_sort(array)
 
         # if one swap in the whole lap, start again
         trigger = true
+        next unless test.positive?
       end
     end
     n -= 1
@@ -21,7 +25,6 @@ def bubble_sort(array)
 end
 
 p bubble_sort([4, 3, 78, 2, 0, 2])
-
 
 def bubble_sort_by(array)
   trigger = true
@@ -40,8 +43,7 @@ def bubble_sort_by(array)
   end
   array
 end
-
-
+# rubocop:enable Style/Next
 
 p bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
 p bubble_sort_by(%w[hi hello hey by]) { |left, right| left.length - right.length }
