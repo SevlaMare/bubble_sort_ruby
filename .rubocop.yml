@@ -3,7 +3,9 @@ AllCops:
     - "README.md"
     - "Guardfile"
     - "Rakefile"
-
+    
+  NewCops: disable
+  
   DisplayCopNames: true
 
 Layout/LineLength:
