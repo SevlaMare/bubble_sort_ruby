@@ -1,6 +1,3 @@
-# rubocop:disable Style/Next
-# dissable Next, since my soluction is trigger to next using while true
-
 def bubble_sort(array)
   trigger = true
   while trigger
@@ -11,13 +8,12 @@ def bubble_sort(array)
     # because last element it's already sorted
     n = 1
     (0...array.length - n).each do |i|
-      if array[i] > array[i + 1]
-        array[i], array[i + 1] = array[i + 1], array[i]
+      next unless array[i] > array[i + 1]
 
-        # if one swap in the whole lap, start again
-        trigger = true
-        next unless test.positive?
-      end
+      array[i], array[i + 1] = array[i + 1], array[i]
+
+      # if one swap in the whole lap, start again
+      trigger = true
     end
     n -= 1
   end
@@ -33,17 +29,16 @@ def bubble_sort_by(array)
 
     n = 1
     (0...array.length - n).each do |i|
-      if yield(array[i], array[i + 1]).to_i.positive?
-        array[i], array[i + 1] = array[i + 1], array[i]
+      next unless yield(array[i], array[i + 1]).positive?
 
-        trigger = true
-      end
+      array[i], array[i + 1] = array[i + 1], array[i]
+
+      trigger = true
     end
     n -= 1
   end
   array
 end
-# rubocop:enable Style/Next
 
 p bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
 p bubble_sort_by(%w[hi hello hey by]) { |left, right| left.length - right.length }
