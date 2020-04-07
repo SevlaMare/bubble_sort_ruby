@@ -25,13 +25,20 @@ end
 
 p bubble_sort([4, 3, 78, 2, 0, 2])
 
-def bubble_sort_by(array)
-  i = 0
-  while i < array.length - 1
-    array[i], array[i + 1] = array[i + 1], array[i] if yield(array[i], array[i - 1]).positive?
-    i += 1
+
+def bubble_sort_by(arx)
+  (0...arx.length - 1).each do |i|
+    result = yield(arx[i], arx[i - 1])
+    if result.positive?
+      arx[i], arx[i + 1] = arx[i + 1], arx[i]
+    end
   end
-  p array
+  arx
 end
 
-bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
+
+
+
+p bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
+p bubble_sort_by(%w[hi hello hey by]) { |left, right| left.length - right.length }
+#p bubble_sort_by(%w[b a aaa aa aaa a aa]) { |left, right| left.length - right.length }
