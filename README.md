@@ -70,8 +70,8 @@ A special thanks for the code reviewers.
 👤 **Thiago Miranda**
 
 - Github: [@SevlaMare](https://github.com/SevlaMare)
-- Twitter: [#SevlaMare)](https://twitter.com/SevlaMare)
-- Linkedin: [SevlaMare)](https://www.linkedin.com/in/sevlamare)
+- Twitter: [#SevlaMare](https://twitter.com/SevlaMare)
+- Linkedin: [SevlaMare](https://www.linkedin.com/in/sevlamare)
 
 ### License
 
