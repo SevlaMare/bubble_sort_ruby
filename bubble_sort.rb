@@ -41,7 +41,4 @@ end
 
 
 p bubble_sort([3,1,2])
-p bubble_sort([1,-1,0])
-p bubble_sort([-1,-3,-4,-6,-7])
-
-#p bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
+p bubble_sort_by(%w[hi hello hey]) { |left, right| left.length - right.length }
